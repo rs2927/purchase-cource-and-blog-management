@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Course Deals & Blog Management</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <h1>Discounted Courses</h1>
+    <ul>
+      <li><a href="#courses">Courses</a></li>
+      <li><a href="#blog">Blog Management</a></li>
+    </ul>
+  </nav>
+
+  <!-- Discounted Courses Section -->
+  <section id="courses">
+    <h2>Real-Time Discounted Courses</h2>
+    <div id="course-list" class="course-list">
+      <!-- Courses will be dynamically added here by JavaScript -->
+    </div>
+  </section>
+
+  <!-- Blog Management Section -->
+  <section id="blog">
+    <h2>Blog Management</h2>
+    <form id="blogForm">
+      <input type="text" id="blogTitle" placeholder="Blog Title" required>
+      <textarea id="blogContent" placeholder="Write your blog post here..." required></textarea>
+      <label for="publishTime">Schedule Publish Time:</label>
+      <input type="datetime-local" id="publishTime" required>
+      <button type="submit">Add Post</button>
+    </form>
+    <div id="blog-posts">
+      <!-- Scheduled blog posts will be dynamically added here by JavaScript -->
+    </div>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>

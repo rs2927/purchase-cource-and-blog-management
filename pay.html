@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment Page</title>
+  <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+  <section id="payment">
+    <h2>Course Payment</h2>
+    <p id="selectedCourse"></p>
+    <form id="paymentForm">
+      <label for="paymentMethod">Select Payment Method:</label>
+      <select id="paymentMethod" required>
+        <option value="">Choose Payment Method</option>
+        <option value="creditCard">Credit Card</option>
+        <option value="debitCard">Debit Card</option>
+        <option value="upi">UPI</option>
+      </select>
+      
+      <div id="verificationSection" style="display: none;">
+        <label for="verificationCode">Enter Verification Code:</label>
+        <input type="text" id="verificationCode" placeholder="1234" required>
+      </div>
+      
+      <button type="submit">Proceed to Payment</button>
+    </form>
+  </section>
+
+  <script src="payment.js"></script>
+</body>
+</html>
